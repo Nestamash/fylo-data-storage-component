@@ -77,7 +77,7 @@ main{
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
-    background-color: var(--Very-Dark-Blue);
+ 
 }
 .icon-container{
     display: flex;
@@ -206,4 +206,37 @@ picture{
 }
 .attribution a { 
     color: var(--Dark-Blue); 
+}
+@media(max-width: 40em){
+    main{
+        width: 80%;
+        margin: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* footer */
+.attribution { 
+    
+    font-size: 8px; 
+    height: 0px;
+    text-align: center; 
+    margin-top: auto;
+   color: var(--Pale-Blue);
+    
+}
+.attribution a { 
+    background-image: linear-gradient(var(--Gradient)) ; 
+    color: var(--Pale-Blue);
+}
+.top-image{
+    margin: 0;
+    width: 100%;
+}
+.logo-wrapper{
+    
+    border-top-right-radius: 50px;
+}
+.data-left{
+    top: 90px;
+    right: 60px;  
+}
 }
